@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.form-panel {
+    flex: 1;
+    padding: 40px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-panel {
+    flex: 1;
+    background-image: url('https://static.pollstar.com/wp-content/uploads/2022/02/0f018592-4d05-42ef-a812-3a0b26b08551-leon-de-greiff-hall-at-national-university-of-colombia-in-bogota.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    color: #ff6600;
+    align-self: flex-start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f2633b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e14d22;
+}
+
+.btn-volver {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #5e2bff;
+    border: 2px solid #5e2bff;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-volver:hover {
+    background-color: #5e2bff;
+    color: white;
+}

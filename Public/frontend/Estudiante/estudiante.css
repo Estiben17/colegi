@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.form-panel {
+    flex: 1;
+    padding: 40px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-panel {
+    flex: 1;
+    background-image: url('https://static.wixstatic.com/media/nsplsh_312d614132466164796463~mv2_d_5101_3401_s_4_2.jpg/v1/fill/w_5101,h_3401,al_c,q_90,enc_auto/nsplsh_312d614132466164796463~mv2_d_5101_3401_s_4_2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    color: #ff6600;
+    align-self: flex-start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f2633b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e14d22;
+}
+
+.btn-volver {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #5e2bff;
+    border: 2px solid #5e2bff;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-volver:hover {
+    background-color: #5e2bff;
+    color: white;
+}

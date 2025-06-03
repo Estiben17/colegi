@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CM Academy - Estudiantes</title>
+    <link rel="stylesheet" href="estudiante.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-panel">
+            <div class="logo">🎓 CM Academy</div>
+            <h2>Registro de Estudiantes</h2>
+            <form id="form-estudiante">
+                <label for="tipoDocumento">Tipo de Documento</label>
+                <input type="text" id="tipoDocumento" placeholder="CC, TI, CE..." required />
+
+                <label for="numeroDocumento">Número de Documento</label>
+                <input type="text" id="numeroDocumento" required />
+
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" required />
+
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" required />
+
+                <label for="departamento">Departamento</label>
+                <input type="text" id="departamento" placeholder="Ej: Ingeniería, Ciencias..." required />
+
+                <button type="submit">Registrar Estudiante</button>
+                <a class="btn-volver" href="../../index.html">Volver al menú principal</a>
+            </form>
+        </div>
+        <div class="image-panel"></div>
+    </div>
+
+    <div id="estudiantes" style="padding: 20px;"></div>
+
+    <script src="estudiante.js"></script>
+</body>
+
+</html>

@@ -4,42 +4,46 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CM Academy - Menú Principal</title>
+    <title>CM Academy - Universidad de Cundinamarca</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./index.css" />
 </head>
 
 <body>
+    <div class="ucundinamarca-container">
+        <header class="uc-header">
+            <div class="uc-header-content">
+                <img src="https://sistemaexitoacademico.ucundinamarca.edu.co/images/logo.png" alt="Logo Universidad" class="uc-logo">
+                <h1 class="uc-title">UNIVERSIDAD DE CUNDINAMARCA</h1>
+                <p class="uc-subtitle">Sistema Integrado de Gestión Académica</p>
+            </div>
+        </header>
 
-    <header class="header">
-        <h1>CM Academy</h1>
-        <p>Sistema de Gestión Académica</p>
-    </header>
-
-    <main class="menu">
-        <a href="frontend/Departamento/Departamento.html" class="card">
-            <div class="icon">🏫</div>
-            <div class="text">Facultades</div>
-        </a>
-        <a href="frontend/Asignatura/asignatura.html" class="card">
-            <div class="icon">📚</div>
-            <div class="text">Asignaturas</div>
-        </a>
-        <a href="frontend/Estudiante/estudiante.html" class="card">
-            <div class="icon">🎓</div>
-            <div class="text">Estudiantes</div>
-        </a>
-        <a href="frontend/Asistencia/asistencia.html" class="card">
-            <div class="icon">📝</div>
-            <div class="text">Asistencias</div>
-        </a>
-    </main>
-
-    <footer>
-        © 2025 CM Academy · Desarrollado por Cris & May
-    </footer>
-
+        <main class="uc-menu-grid">
+            <a href="frontend/Departamento/Departamento.html" class="uc-card faculty-card">
+                <div class="uc-icon"><i class="fas fa-building-columns"></i></div>
+                <div class="uc-card-title">Facultades</div>
+            </a>
+            <a href="frontend/Asignatura/asignatura.html" class="uc-card subject-card">
+                <div class="uc-icon"><i class="fas fa-book-open"></i></div>
+                <div class="uc-card-title">Asignaturas</div>
+            </a>
+            <a href="frontend/Estudiante/estudiante.html" class="uc-card student-card">
+                <div class="uc-icon"><i class="fas fa-user-graduate"></i></div>
+                <div class="uc-card-title">Estudiantes</div>
+            </a>
+            <a href="frontend/Asistencia/asistencia.html" class="uc-card attendance-card">
+                <div class="uc-icon"><i class="fas fa-clipboard-check"></i></div>
+                <div class="uc-card-title">Asistencias</div>
+            </a>
+        </main>
+        
+        <footer class="uc-footer">
+            <p>© 2023 Universidad de Cundinamarca - Todos los derechos reservados</p>
+        </footer>
+    </div>
 </body>
 
 </html>

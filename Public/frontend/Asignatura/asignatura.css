@@ -66,36 +66,12 @@ body, html {
     color: var(--uc-dark);
 }
 
-/* Datos actuales */
-.uc-current-data {
-    background-color: var(--uc-light);
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    border-left: 4px solid var(--uc-primary);
-}
-
-.uc-current-data p {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--uc-dark);
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-}
-
-.uc-current-value {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--uc-primary);
-    display: block;
-}
-
 /* Formulario */
 .uc-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .uc-form-group {
@@ -172,6 +148,28 @@ body, html {
     transform: translateY(-2px);
 }
 
+/* Sección de asignaturas registradas */
+.uc-registered-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.uc-section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--uc-dark);
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.uc-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
 /* Panel de imagen */
 .uc-image-panel {
     flex: 1;
@@ -227,9 +225,4 @@ body, html {
     .uc-button-group {
         flex-direction: column;
     }
-}
-.uc-logo {
-    height: 80px;
-    max-width: 100%;
-    object-fit: contain;
 }

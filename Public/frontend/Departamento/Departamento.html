@@ -3,27 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CM Academy - Departamento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCundinamarca - Gestión de Departamentos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="departamento.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="form-panel">
-            <div class="logo">🏢 CM Academy</div>
-            <h2>Gestión de Departamento</h2>
+    <div class="uc-container">
+        <div class="uc-form-panel">
+            <div class="uc-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Logo_Universidad_de_Cundinamarca.png" alt="Logo Universidad de Cundinamarca" class="uc-logo">
+                <div class="uc-title-container">
+                    <h1 class="uc-system-title">Sistema de Gestión Académica</h1>
+                    <h2 class="uc-module-title">Gestión de Departamentos</h2>
+                </div>
+            </div>
 
-            <p>Nombre actual: <span id="nombreDepartamento">---</span></p>
+            <div class="uc-current-data">
+                <p><i class="fas fa-building"></i> Nombre actual del departamento:</p>
+                <span id="nombreDepartamento" class="uc-current-value">---</span>
+            </div>
 
-            <form id="form-departamento">
-                <label for="nuevoNombre">Nuevo nombre</label>
-                <input type="text" id="nuevoNombre" placeholder="Nuevo nombre del departamento" required>
-                <button type="submit">Actualizar</button>
-                <a class="btn-volver" href="../../index.html">Volver al menú principal</a>
+            <form id="form-departamento" class="uc-form">
+                <div class="uc-form-group">
+                    <label for="nuevoNombre">Nuevo nombre del departamento</label>
+                    <input type="text" id="nuevoNombre" placeholder="Ingrese el nuevo nombre" required>
+                    <i class="fas fa-edit uc-input-icon"></i>
+                </div>
+
+                <div class="uc-button-group">
+                    <button type="submit" class="uc-btn-primary">
+                        <i class="fas fa-sync-alt"></i> Actualizar Departamento
+                    </button>
+                    <a href="../../index.html" class="uc-btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Volver al Menú
+                    </a>
+                </div>
             </form>
         </div>
 
-        <div class="image-panel"></div>
+        <div class="uc-image-panel" style="background-image: url('https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=3000&auto=format&fit=crop')">
+            <div class="uc-image-overlay">
+                <h3>Universidad de Cundinamarca</h3>
+                <p>Comprometidos con la excelencia académica</p>
+            </div>
+        </div>
     </div>
 
     <script src="departamento.js"></script>

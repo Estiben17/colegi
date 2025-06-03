@@ -1,80 +1,160 @@
-/* Reset y base */
+/* Estilos con identidad UCundinamarca */
+:root {
+    --uc-primary: #006837; /* Verde institucional */
+    --uc-secondary: #6EAE3E;
+    --uc-light: #E8F5E9;
+    --uc-dark: #1B5E20;
+    --uc-accent: #FFC107;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #eef1f5, #dbe4f0);
-    color: #1e2a38;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
     min-height: 100vh;
-    padding: 60px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-/* Encabezado */
-.main-header {
+.ucundinamarca-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Encabezado institucional */
+.uc-header {
+    background: linear-gradient(135deg, var(--uc-primary), var(--uc-secondary));
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
     text-align: center;
-    margin-bottom: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.main-header h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #2d3e50;
+.uc-logo {
+    height: 80px;
+    margin-bottom: 1rem;
 }
 
-.subtitle {
-    font-size: 1.1rem;
-    color: #5e6e89;
-    margin-top: 10px;
+.uc-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.uc-subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    opacity: 0.9;
 }
 
 /* Menú principal */
-.menu {
+.uc-menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    max-width: 1000px;
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
 }
 
-/* Tarjetas */
-.card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    padding: 30px;
+.uc-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
     text-align: center;
-    transition: all 0.3s ease;
     text-decoration: none;
-    color: #1e2a38;
+    color: var(--uc-dark);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
 }
 
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+.uc-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--uc-primary);
 }
 
-.icon {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    color: #5e2bff;
+.uc-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--uc-primary);
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--uc-light);
 }
 
-.text {
+.uc-card:hover .uc-icon {
+    background-color: var(--uc-primary);
+    color: white;
+    transform: scale(1.1);
+}
+
+.uc-card-title {
+    font-size: 1.3rem;
     font-weight: 600;
-    font-size: 1.2rem;
+    color: var(--uc-dark);
 }
+
+/* Tarjetas individuales */
+.faculty-card:hover { background-color: #E8F5E9; }
+.subject-card:hover { background-color: #F1F8E9; }
+.student-card:hover { background-color: #E8F5E9; }
+.attendance-card:hover { background-color: #F1F8E9; }
 
 /* Pie de página */
-footer {
-    margin-top: 60px;
-    font-size: 0.9rem;
-    color: #8a97a8;
+.uc-footer {
     text-align: center;
+    padding: 1.5rem;
+    background-color: var(--uc-dark);
+    color: white;
+    border-radius: 8px;
+    margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ucundinamarca-container {
+        padding: 1rem;
+    }
+    
+    .uc-title {
+        font-size: 1.8rem;
+    }
+    
+    .uc-menu-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .uc-menu-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .uc-header {
+        padding: 1.5rem 1rem;
+    }
+    
+    .uc-logo {
+        height: 60px;
+    }
 }

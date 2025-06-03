@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCundinamarca - Gestión de Asignaturas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="asignatura.css">
+</head>
+
+<body>
+    <div class="uc-container">
+        <div class="uc-form-panel">
+            <div class="uc-header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Logo_Universidad_de_Cundinamarca.png" alt="Logo Universidad" class="uc-logo">
+                <div class="uc-title-container">
+                    <h1 class="uc-system-title">Sistema de Gestión Académica</h1>
+                    <h2 class="uc-module-title">Gestión de Asignaturas</h2>
+                </div>
+            </div>
+
+            <form id="formulario-asignatura" class="uc-form">
+                <div class="uc-form-group">
+                    <label for="codigo">Código de Asignatura</label>
+                    <input type="text" id="codigo" required placeholder="Ej: MAT101">
+                    <i class="fas fa-hashtag uc-input-icon"></i>
+                </div>
+
+                <div class="uc-form-group">
+                    <label for="grupo">Grupo</label>
+                    <input type="text" id="grupo" required placeholder="Ej: 1">
+                    <i class="fas fa-users uc-input-icon"></i>
+                </div>
+
+                <div class="uc-form-group">
+                    <label for="semestre">Semestre Académico</label>
+                    <input type="text" id="semestre" required placeholder="Ej: 2025-I">
+                    <i class="fas fa-calendar-alt uc-input-icon"></i>
+                </div>
+
+                <div class="uc-form-group">
+                    <label for="nombre">Nombre de la Asignatura</label>
+                    <input type="text" id="nombre" required placeholder="Ej: Cálculo Integral">
+                    <i class="fas fa-book uc-input-icon"></i>
+                </div>
+
+                <div class="uc-form-group">
+                    <label for="creditos">Créditos Académicos</label>
+                    <input type="number" id="creditos" required placeholder="Ej: 3" min="1" max="10">
+                    <i class="fas fa-star uc-input-icon"></i>
+                </div>
+
+                <div class="uc-button-group">
+                    <button type="submit" class="uc-btn-primary">
+                        <i class="fas fa-save"></i> Guardar Asignatura
+                    </button>
+                    <a href="../../index.html" class="uc-btn-secondary">
+                        <i class="fas fa-arrow-left"></i> Volver al Menú
+                    </a>
+                </div>
+            </form>
+
+            <div class="uc-registered-section">
+                <h3 class="uc-section-title">
+                    <i class="fas fa-list-check"></i> Asignaturas Registradas
+                </h3>
+                <div id="asignaturas-lista" class="uc-cards-container"></div>
+            </div>
+        </div>
+
+        <div class="uc-image-panel" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=3000&auto=format&fit=crop')">
+            <div class="uc-image-overlay">
+                <h3>Universidad de Cundinamarca</h3>
+                <p>Excelencia académica para el desarrollo regional</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="asignatura.js"></script>
+</body>
+
+</html>
